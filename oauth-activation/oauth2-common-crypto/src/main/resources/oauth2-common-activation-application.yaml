@@ -1,0 +1,26 @@
+oauth2-common:
+  jwtProperties:
+    providers:
+      google:
+        - pubCertConfigProperties:
+            kid: c9afda3682ebf09eb3055c1c4bd39b751fbf8195
+            pub-cert-file: google-c9afda3682ebf09eb3055c1c4bd39b751fbf8195.cer
+        - pubCertConfigProperties:
+            kid: 7770b085bf649b726b3574764030e1bde9a10ae6
+            pub-cert-file: google-7770b085bf649b726b3574764030e1bde9a10ae6.cer
+        - pubCertConfigProperties:
+            kid: 822838c1c8bf9edcf1f5050662e54bcb1adb5b5f
+            pub-cert-file: google-822838c1c8bf9edcf1f5050662e54bcb1adb5b5f.crt
+        - jWKConfigProperties:
+            jwk-file: google-jwk.jwk
+        # RSA Public Key. BEGIN RSA PUBLIC KEY" es PKCS # 1. Sólo puede contener RSA
+        #"BEGIN PUBLIC KEY" es PKCS # 8. Varios formatos
+#        file: google-key-2.pkcs8
+#https://stackoverflow.com/questions/48958304/pkcs1-and-pkcs8-format-for-rsa-private-key
+
+      wso2is:
+      - jKSConfigProperties:
+          kid: ZDI3MjExOTNjMzViYjgzZDE4Y2Y1OGU3OTczYzkzNTkxYTRlYzUxM2FmZmM4NzdlM2RkYmExOWFmNzZhMWY0OQ_RS256
+          alias: wso2is
+          keystore: wso2is.jks
+          password: femema
