@@ -1,0 +1,14 @@
+<p>Acollyte header</p>
+<div  *ngIf="myInfo$ | async as myInfo">
+    <h2><strong>{{myInfo.name}}</strong> services:</h2>
+</div>
+<nav>
+    <a routerLink="./" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Acollyte Dashboard Nav bar</a>
+    <a routerLink="./other1" routerLinkActive="active">Other 1</a>
+    <a routerLink="./other2" routerLinkActive="active">Other 2</a>
+</nav>
+
+<p>Fin Acollyte header</p>
+
+
+
