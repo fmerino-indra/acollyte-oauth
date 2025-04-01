@@ -1,0 +1,18 @@
+spring:
+   jpa:
+      database: POSTGRESQL
+      show-sql: true
+      hibernate:
+         ddl-auto: none
+   datasource:
+      platform: postgres
+      url: jdbc:postgresql://localhost:5432/?currentSchema=acollyte
+      username: acollyte
+      password: femema
+      driverClassName: org.postgresql.Driver
+   security:
+      oauth2:
+         resourceserver:
+            issuer-uri: https://accounts.google.com
+#            jwk-set-uri: https://www.googleapis.com/oauth2/v3/certs
+    

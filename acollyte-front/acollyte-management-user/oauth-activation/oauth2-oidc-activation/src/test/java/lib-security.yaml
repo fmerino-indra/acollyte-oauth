@@ -1,0 +1,96 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+#    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://ec2-54-75-238-138.eu-west-1.compute.amazonaws.com:5432/d45mro2qcj28j1?currentSchema=acollyte_calendar
+    username: pwndjizgoydktg
+    password: 09483c6f7a2bf97afbf0bfd8d04d66c65f986d35b96f22478f9b33a069984d02
+    driverClassName: org.postgresql.Driver
+
+  security:
+    oauth2:
+#      resourceserver:
+#        jwt:
+#          public-key-location: classpath:google-key.pkcs8
+      client:
+        registration:
+          wso2is:
+            provider: wso2is
+            clientId: UP49ZcuXTrEqEfjqrUPUlMJ5SzQa
+            clientSecret: ElzvqZSAfZc7s1ChmihYU87D7m4a
+            redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
+            authorization-grant-type: authorization_code
+            scope:
+              - email
+              - profile
+              - openid
+              - scope-app
+          facebook:
+            clientId: 828614483216-be27hspf9p6vtvoui58o4q7b2tk28ueb.apps.googleusercontent.com
+            clientSecret: JMj_orDRyj_IdPm8UidYaBMI
+            redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
+            scope:
+              - email
+              - public_profile
+          github:
+            clientId: 828614483216-be27hspf9p6vtvoui58o4q7b2tk28ueb.apps.googleusercontent.com
+            clientSecret: JMj_orDRyj_IdPm8UidYaBMI
+            redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
+            scope:
+              - user:email
+              - read:user
+          google:
+            clientId: 828614483216-7nvkg3vt6pnqeb8lotujcr9lqrbjvldn.apps.googleusercontent.com
+            clientSecret: -QLHSR400mM1uIM2t_2tEUTj
+            redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
+            scope:
+              - openid
+              - email
+              - profile
+        provider:
+          wso2is:
+            authorizationuri: https://IS95750X284073P.scisb.isban.corp:9443/oauth2/authorize
+            tokenUri: https://IS95750X284073P.scisb.isban.corp:9443/oauth2/token
+            userInfoUri: https://IS95750X284073P.scisb.isban.corp:9443/oauth2/userinfo
+            user-name-attribute: sub
+            jwk-set-uri: https://IS95750X284073P.scisb.isban.corp:9443/oauth2/jwks
+          google:
+            jwk-set-uri: https://www.googleapis.com/oauth2/v3/certs
+          facebook:
+            authorizationuri: https://www.facebook.com/v3.0/dialog/oauth
+            tokenUri: https://graph.facebook.com/v3.0/oauth/access_token
+            userInfoUri: https://graph.facebook.com/v3.0/me?fields=id,first_name,middle_name,last_name,name,email,verified,is_verified,picture.width(250).height(250)
+
+app:
+#  scim:
+#    clientId: mEcgzg32g_DTkPGLfdli5I2wGaAa
+#    clientSecret: fb6vpqxEHGQOQEZmXq7pVSgr9Eka
+#    tokenUri: https://IS95750X284073P.scisb.isban.corp:9443/oauth2/token
+  auth:
+    tokenSecret: 926D96C90030DD58429D2751AC1BDBBC
+    tokenExpirationMsec: 864000000
+  oauth2:
+    # After successfully authenticating with the OAuth2 Provider,
+    # we'll be generating an auth token for the user and sending the token to the
+    # redirectUri mentioned by the frontend client in the /oauth2/authorize request.
+    # We're not using cookies because they won't work well in mobile clients.
+    authorizedRedirectUris:
+      - http://localhost:3000/oauth2/redirect
+      - http://localhost:4200/oauth2/redirect
+      - http://localhost:4200/oauth2/redirect
+      - myandroidapp://oauth2/redirect
+      - myiosapp://oauth2/redirect
+  jwtProperties:
+#    file: ./wso2is-tls-pkcs12.jks
+#    password: femema
+#    alias: is95750x284073p.scisb.isban.corp
+    providers:
+      wso2is:
+        - kid: ODI2ZTI0ODRiYjM2NWI2NWM2M2I1NDI1MjQ4NDk3ODA2ZDQ4YTVkZQ
+          alias: is95750x284073p.scisb.isban.corp
+          keystore: wso2is-tls-pkcs12.jks
+          password: femema

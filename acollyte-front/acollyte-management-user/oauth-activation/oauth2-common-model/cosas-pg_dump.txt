@@ -1,0 +1,11 @@
+#Exporta la tabla social_user con inserts
+pg_dump -h localhost -U acollyte -p 5432 -d acollyte -Fp -f export-acollyte-user.sql -a --inserts -t social_user
+
+#Exporta en directorio
+pg_dump -h localhost -U acollyte -p 5432 -d acollyte -Fd -f 20230608-export-acollyte.d
+
+#Exporta en custom format
+pg_dump -h localhost -U acollyte -p 5432 -d acollyte -Fc > 20230608-export-acollyte.dump
+
+#Exporta en fichero plano con copy
+pg_dump -h localhost -U acollyte -p 5432 -d acollyte > export.sql
