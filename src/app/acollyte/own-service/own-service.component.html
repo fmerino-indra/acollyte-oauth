@@ -1,0 +1,19 @@
+<!-- 
+<div  *ngIf="hello$ | async as hello">
+    <p>{{hello}}</p>
+</div>
+-->
+
+<nav class="app-nav">
+<ul class="listRafflePerson">
+  <li *ngFor="let rafflePerson of listRafflePerson" (mouseenter)="selectRaffle(rafflePerson)" (mouseleave)="selectRaffle(null)">
+      <input type="checkbox" [(ngModel)]="rafflePerson.canGo" checked="true" /> 
+    <!-- <a routerLink="detail/{{rafflePerson.rafflePersonId}}"> -->
+    <a routerLink="detail">
+      <span class="badge">{{rafflePerson.serviceDate}}</span> {{rafflePerson.serviceName}} {{rafflePerson.canGo}} {{rafflePerson.rafflePersonId}}  
+
+    </a>
+  </li>
+</ul>
+</nav>
+<p>Selected Raffle: {{selectedRafflePerson?.serviceName}}</p>
