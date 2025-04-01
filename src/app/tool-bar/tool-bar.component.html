@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon (click)="toggleSideNav()">menu</mat-icon>
+    </button>
+    <h1>Acolitos</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/dashboard-user'"> Dashboard </a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

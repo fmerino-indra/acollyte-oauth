@@ -1,0 +1,122 @@
+{
+"services": [
+  {
+    "id": 29,
+    "serviceDate": 1574553600000,
+    "serviceName": "Sunday",
+    "eve": false,
+    "fixed": false,
+    "persons": [
+      {
+        "id": 6,
+        "comunidad": 7,
+        "name": "Eugenio Sanz",
+        "mobileNumber": "655183112  ",
+        "emailAccount": "esanzmonge@gmail.com"
+      }, {
+        "id": 11,
+        "comunidad": 8,
+        "name": "Carlos Rodríguez",
+        "mobileNumber": "679356309  ",
+        "emailAccount": "carlos10rodriguez@hotmail.com"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "serviceDate": 1575158400000,
+    "serviceName": "Sunday",
+    "eve": false,
+    "fixed": false,
+    "persons": [
+      {
+        "id": 11,
+        "comunidad": 8,
+        "name": "Carlos Rodríguez",
+        "mobileNumber": "679356309  ",
+        "emailAccount": "carlos10rodriguez@hotmail.com"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "serviceDate": 1575763200000,
+    "serviceName": "Sunday",
+    "eve": false,
+    "fixed": false,
+    "persons": [
+      {
+        "id": 8,
+        "comunidad": 7,
+        "name": "Pablo Guerrero",
+        "mobileNumber": "659559311  ",
+        "emailAccount": "pb.guerrero.vc@gmail.com"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "serviceDate": 1576368000000,
+    "serviceName": "Sunday",
+    "eve": false,
+    "fixed": false,
+    "persons": [
+      {
+        "id": 13,
+        "comunidad": 6,
+        "name": "José Aurelio",
+        "mobileNumber": "657560401  ",
+        "emailAccount": null
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "serviceDate": 1576972800000,
+    "serviceName": "Sunday",
+    "eve": false,
+    "fixed": false,
+    "persons": [
+      {
+        "id": 2,
+        "comunidad": 1,
+        "name": "Juanvi",
+        "mobileNumber": "610633926  ",
+        "emailAccount": null
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "serviceDate": 1577577600000,
+    "serviceName": "Sunday",
+    "eve": false,
+    "fixed": false,
+    "persons": [
+      {
+        "id": 4,
+        "comunidad": 3,
+        "name": "Rafael Ibáñez",
+        "mobileNumber": "696475188  ",
+        "emailAccount": "ribanezadmon@yahoo.es"
+      }
+    ]
+  }
+],
+"persons": [
+  {
+    "id": 5,
+    "comunidad": 3,
+    "name": "Félix Merino",
+    "mobileNumber": "660959325  ",
+    "emailAccount": "felix.merino@gmail.com"
+  }, {
+    "id": 1,
+    "comunidad": 1,
+    "name": "Manuel Montero Fake",
+    "mobileNumber": "679356309  ",
+    "emailAccount": "manumont@hotmail.com"
+  }
+]
+
+}
