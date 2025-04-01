@@ -1,0 +1,128 @@
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: relative;
+  /* top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px; */
+
+  padding: .5em;
+  margin-bottom: 0.5em;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: left;
+}
+
+.mat-card-title, .mat-card-subtitle, .material-icons {
+  /* font-size: 12px; */
+  font-size: 1.7em;
+  margin-bottom: 0.2em !important;
+  margin-top: 0em !important;
+}
+
+/* .mat-grid-tile {
+  height: 
+} */
+.persons {
+  margin: 0 0 .2em 0;
+  list-style-type: none;
+  padding: 0;
+  /* width: 15em; */
+/* .persons a */
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  /* width: 250px; */
+}
+
+.persons li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 2.6em;
+  border-radius: 4px;
+}
+
+/* .persons .list-element {
+  column-count: 3;
+} */
+
+.persons li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  /* left: .1em; */
+}
+
+.persons .badge {
+  display: inline-block;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  /* background-color:#405061; */
+  background-color:#5bb759;
+  /* background-color:#ff1100fa; */
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.6em;
+  margin-right: .8em;
+  /* border-radius: 4px 0 0 4px; */
+  border-radius: 4px;
+
+  /* font-size: small; */
+  font-size: 1.3em;
+
+}
+.persons .datos-sec {
+  position: absolute;
+  display: inline-grid;
+}
+.persons .arriba-et {
+  display: inline-block;
+  font-size: small;
+  position: relative;
+  top: 0;
+  /* top: -1.5em; */
+}
+.persons .abajo-et {
+  display: inline-block;
+  font-size: small;
+  position: relative;
+  /* left: -7em; */
+  /* top: .5em; */
+}
+
+.dashboard-persons {
+  position: relative;
+  padding: 0;
+  margin-bottom: 0.5em;
+}
+
+.rest-persons {
+  list-style-type: none;
+  padding: .7em;
+  color: #2b5428;
+  background-color: #189821;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  font-size: 1.3em;
+  border-radius: 4px;
+}
+
+
+
