@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/?currentSchema=acollyte
+    username: acollyte
+    password: femema
+    driverClassName: org.postgresql.Driver
+

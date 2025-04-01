@@ -1,0 +1,31 @@
+server:
+   port: 8888
+spring:
+   jpa:
+      database: POSTGRESQL
+      hibernate:
+         ddl-auto: none
+   datasource:
+      platform: postgres
+      url: jdbc:postgresql://localhost:5432/?currentSchema=acollyte
+      username: acollyte
+      password: femema
+      driverClassName: org.postgresql.Driver
+   security:
+      oauth2:
+         resourceserver:
+            jwt:
+               issuer-uri: https://accounts.google.com
+               jwk-set-uri: https://www.googleapis.com/oauth2/v3/certs
+        
+logging:
+  level:
+    root: WARN
+#    org.springframework.security: TRACE
+#    org.springframework.security.oauth2: TRACE
+#    org.springframework.security.authentication.ProviderManager: TRACE
+#    org.springframework.web.client.RestTemplate: TRACE
+
+#    org.springframework.web: DEBUG
+#    org.hibernate: DEBUG
+    org.fmm: DEBUG
